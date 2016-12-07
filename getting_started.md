@@ -1,7 +1,4 @@
 # Getting Started
-**Whose responsibility is it to make the input/output specs? Authors or executors?**
-
-
 1. Find the knowledge objects ArkID. The ArkID can be found on ObjectTeller.
 2. Using REST API commands, add knowledge object to shelf.
   ```
