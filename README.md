@@ -10,7 +10,7 @@ This manual includes information on the process of executing a knowledge object,
 
 The basic steps to execute a knowledge object include \(1\) adding knowledge object to shelf, and \(2\) executing knowledge object with data.
 
-In the "Getting Started" section, we will walk through a basic example of using the execution stack.
+In the "Getting Started" section, we will walk through a basic example of using the execution stack. 
 
 This documentation is being maintained on git book. The git book documentation can be accessed at: [https://www.gitbook.com/book/kgrid/execution-manual](https://www.gitbook.com/book/kgrid/execution-manual/)
 
