@@ -12,5 +12,5 @@ The basic steps to execute a knowledge object include \(1\) adding knowledge obj
 
 In the "Getting Started" section, we will walk through a basic example of using the execution stack.
 
-This documentation is being maintained on git book. The git book documentation can be accessed at: [https://www.gitbook.com/book/kgrid/execution-manual/](https://www.gitbook.com/book/kgrid/execution-manual/) 
+This documentation is being maintained on git book. The git book documentation can be accessed at: [https://www.gitbook.com/book/kgrid/execution-manual](https://www.gitbook.com/book/kgrid/execution-manual/)
 
