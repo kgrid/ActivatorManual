@@ -16,3 +16,7 @@ This documentation is being maintained on git book. The git book documentation c
 
 Additional questions beyond the information given can be directed to: dlhs.knowledge.grid@umich.edu.
 
+
+
+Copyright © University of Michigan, Department of Learning Health Sciences
+
