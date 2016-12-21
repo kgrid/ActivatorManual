@@ -6,23 +6,31 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
 
 1. Find the knowledge objects \(KO\) ArkID. The ArkID can be found on ObjectTeller.
 
-2. Using REST API commands, add KO to shelf.
+2. Using REST API commands, add KO to shelf. When adding KO to the shelf, the following header must be used. Copy & Paste the header into your REST API client and execute the PUT command.
 
    ```
+   Content-Type:application/json
+   ```
+
+3. ```
    PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/ArkID
    ```
-
-3. Check the shelf to make sure the KO ArkID was properly added. If your ArkID of interest is not on the shelf, double check you have the correct ArkID and re-do step 2.
+4. Check the shelf to make sure the KO ArkID was properly added. If your ArkID of interest is not on the shelf, double check you have the correct ArkID and re-do step 2.
 
    ```
    GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/
    ```
 
-4. Add body \(input parameters\) and tests \(optional\). Execute KO.
+5. Add body \(input parameters\) and tests \(optional\). The following header must be used when execute KO. Copy & Paste the header into your REST API client and execute the POST command. 
 
-   ```
-   POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/ArkID/result
-   ```
+   1. ```
+      Accept:application/json
+      Content-Type:application/json
+      ```
+
+```
+
+```
 
 ### Example 1:
 
@@ -58,7 +66,7 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
 
 1. Find the Total Prescriptions KO of from ObjectTeller, and download the payload, or copy & paste the payload below.
    1. ```
-        {
+      {
         "metadata": {
           "title": "Total Prescriptions",
           "owner": "",
