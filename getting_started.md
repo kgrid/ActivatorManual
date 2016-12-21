@@ -45,8 +45,7 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
       
    
    ```
-   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
-         
+   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/fk4rf60z9w
 
    ```
    
@@ -71,6 +70,7 @@ body = {"DrugIDs":"101 204 708 406 190"}.
    
    ```
    POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
+   
    ```
    
 
@@ -125,7 +125,7 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
 3. Copy & Paste or Upload the payload into the body. To add the payload, click "body", "raw", and then use the drop down box to change "text" to select "JSON \(application/json\)". Paste the JSON formatted payload into the body, and execute the PUT command.
    
    ```
-      PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/0123456789
+   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/0123456789
 
    ``` 
    
