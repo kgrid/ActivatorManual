@@ -29,25 +29,23 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
       ```
 
 6. 1. ```
-      POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
+      POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/ArkID/result
       ```
 
-    ```
+      \`\`\`
 
-    ### Example 1: 
+      ### Example 1:
 
-    Now, let's try using an actual knowledge object: Total Prescriptions:
+      Now, let's try using an actual knowledge object: Total Prescriptions:
 
-    1. Find the KO ArkID from the ObjectTeller Library:
-    2. Using REST API commands, add the KO the shelf. Open your REST API client and run the following ADD/UPDATE command.
-       1. ```
-          PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:99999/fk4rf60z9w
+      1. Find the KO ArkID from the ObjectTeller Library:
+      2. Using REST API commands, add the KO the shelf. Open your REST API client and run the following ADD/UPDATE command.
+         1. \`\`\`
+            PUT [http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:99999/fk4rf60z9w](http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:99999/fk4rf60z9w)
+7. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.   
+   1. `GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf`
 
-1. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2. 
-   1. ```
-      GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf
-      ```
-2. Now let's execute the KO. Let's add a basic body that was included in the test function within the Total Prescriptions script. body = {"DrugIDs":"101 204 708 406 190"}.
+8. Now let's execute the KO. Let's add a basic body that was included in the test function within the Total Prescriptions script. body = {"DrugIDs":"101 204 708 406 190"}.
    1. ```
       POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
       ```
