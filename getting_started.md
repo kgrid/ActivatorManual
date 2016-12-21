@@ -42,13 +42,16 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
 1. Find KO Ark Id from the Object Teller Library.
 
 2. Using REST API commands, add the KO the shelf. Open your REST API client, and run the following ADD/UPDATE command.
-
-
+      
+   
    ```
    PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
          
-   ```
 
+   ```
+   
+   
+   
 
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.  
 
@@ -120,12 +123,16 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
 2. Go to your REST API client and use the PUT command to add the payload to the shelf. Let's assign this KO the following ark ID:** ark:/99999/0123456789**. 
 
 3. Copy & Paste or Upload the payload into the body. To add the payload, click "body", "raw", and then use the drop down box to change "text" to select "JSON \(application/json\)". Paste the JSON formatted payload into the body, and execute the PUT command.
+   
+   
+   
+   ```
+      PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/0123456789
 
-   
    ```
-   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/0123456789
    
-   ```
+      
+   
    
 4. Check if the KO is on the shelf by looking for the ark ID.
 
