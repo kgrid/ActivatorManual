@@ -150,6 +150,5 @@ POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeOb
 The output should be 5.
 
 
-That concludes the Getting Started section of this manual. Continue on to the other pages for more detailed information.
 
 
