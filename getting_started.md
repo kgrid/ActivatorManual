@@ -6,15 +6,13 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
 
 1. Find the knowledge objects \(KO\) ArkID. The ArkID can be found on ObjectTeller.
 
-2. Using REST API commands, add KO to shelf. When adding KO to the shelf, the following header must be used. Copy & Paste the header into your REST API client and execute the PUT command.
+2. Using REST API commands, add KO to shelf. Execute the PUT command.
 
-   ```
-   Content-Type:application/json
-   ```
+```
+PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/ArkID
 
-3. ```
-   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/ArkID
-   ```
+```
+   
 4. Check the shelf to make sure the KO ArkID was properly added. If your ArkID of interest is not on the shelf, double check you have the correct ArkID and re-do step 2.
 
    ```
@@ -43,14 +41,13 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
 
 1. Find KO Ark Id from the Object Teller Library.
 
-2. Using REST API commands, add the KO the shelf. Open your REST API client and run the following ADD/UPDATE command.
+2. Using REST API commands, add the KO the shelf. Open your REST API client, and run the following ADD/UPDATE command.
 
 
 ```
 PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
       
 ```
-
 
 
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.  
@@ -60,8 +57,14 @@ GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf
 
 ```
 
-4. Now let's execute the KO. Let's add a basic body that was included in the test function within the Total Prescriptions script. body = {"DrugIDs":"101 204 708 406 190"}.  
+4. Now let's execute the KO. Let's add a basic body that was included in the test function within the Total Prescriptions script. Copy & Paste the header and execute the command.
+body = {"DrugIDs":"101 204 708 406 190"}.  
 
+```
+Accept:application/json
+Content-Type:application/json
+
+```
 
 ```
 POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
@@ -74,7 +77,7 @@ The output should be 5.
 
 1. If you are downloading a payload from a KO, go to the ObjectTeller Library and find the KO of interest. Click download.
 2. Go to your REST API client and use the PUT command to add the payload to the shelf. In order to add a payload to the shelf, an Ark ID must be defined. We suggest choosing a test Ark ID or one not in use to prevent confusion. 
-3. Copy & Paste the payload into the body, and execute the PUT command
+3. Copy & Paste the payload into the body, add the required header, and execute the PUT command
 4. Check in the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct ArkID and re-do step 2.
 5. Add body \(input parameters\) and tests \(optional\). Execute the KO.
 
@@ -114,8 +117,10 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
       }
 ```
 
-2. Go to your REST API client and use the PUT command to add the payload to the shelf. Let's assign this KO the following ark ID:** ark:/99999/0123456789**
-3. Copy & Paste or Upload the payload into the body. To add the payload, click "body", "raw", and then use the drop down box to change "text" to select "JSON \(application/json\)". Paste the JSON formatted payload into the body and execute the PUT command.
+2. Go to your REST API client and use the PUT command to add the payload to the shelf. Let's assign this KO the following ark ID:** ark:/99999/0123456789**. 
+
+3. Copy & Paste or Upload the payload into the body. To add the payload, click "body", "raw", and then use the drop down box to change "text" to select "JSON \(application/json\)". Paste the JSON formatted payload into the body, and execute the PUT command.
+
 
 ```
 PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/0123456789
@@ -129,14 +134,22 @@ GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/
 
 ```
 
-5. Using the POST command, add body \(input parameters\) and tests\(optional\). Execute the KO.
+5. Using the POST command, add body \(input parameters\) and tests\(optional\). Copy & Paste the header and execute the KO.
    body = {"DrugIDs":"101 204 708 406 190"}
+
+```
+Accept:application/json
+Content-Type:application/json
+```
 
 ```
 POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/0123456789/result
 
 ```
 
+The output should be 5.
 
+
+That concludes the Getting Started section of this manual. Continue on to the other pages for more detailed information.
 
 
