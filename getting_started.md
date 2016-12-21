@@ -32,7 +32,7 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
       POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/ArkID/result
       ```
 
-      \`\`\`
+
 
       ### Example 1:
 
