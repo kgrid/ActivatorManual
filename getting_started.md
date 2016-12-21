@@ -21,7 +21,7 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
    GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/
    ```
 
-5. Add body \(input parameters\) and tests \(optional\). The following header must be used when execute KO. Copy & Paste the header into your REST API client and execute the POST command. 
+5. Add body \(input parameters\) and tests \(optional\). The following header must be used when execute KO. Copy & Paste the header into your REST API client and execute the POST command.
 
    1. ```
       Accept:application/json
@@ -32,14 +32,14 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
 
 ```
 
-### Example 1:
+### Example 1: 
 
-Now, let's try using an actual knowledge object: [Total Prescriptions](http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ObjectTeller/object/ark:/99999/fk4rf60z9w). The knowledge object takes in a list of Drug IDs \(RxCUIs\) and outputs the total number of prescriptions with in that list.
+Now, let's try using an actual knowledge object: Total Prescriptions:
 
-1. Find the KO ArkID from the ObjectTeller Library: [http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ObjectTeller/object/ark:/99999/fk4rf60z9w. ](http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ObjectTeller/object/ark:/99999/fk4rf60z9w)The Object ID for this KO is: **ark:/99999/fk4rf60z9w**
-2. Using REST API commands, add the KO to the shelf. Open your REST API client and run the following ADD/UPDATE command.
+1. Find the KO ArkID from the ObjectTeller Library:
+2. Using REST API commands, add the KO the shelf. Open your REST API client and run the following ADD/UPDATE command.
    1. ```
-      PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/fk4rf60z9w
+      PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:99999/fk4rf60z9w
       ```
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2. 
    1. ```
