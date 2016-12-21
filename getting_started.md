@@ -23,14 +23,16 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
 
 5. Add body \(input parameters\) and tests \(optional\). The following header must be used when execute KO. Copy & Paste the header into your REST API client and execute the POST command.
 
-   1. ```
-      Accept:application/json
-      Content-Type:application/json
-      ```
+```
+Accept:application/json
+Content-Type:application/json
+```
 
-6. 1. ```
-      POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/ArkID/result
-      ```
+```
+POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/ArkID/result
+```
+
+
 
 
 ### Example 1:
@@ -42,9 +44,14 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
 1. Find KO Ark Id from the Object Teller Library.
 
 2. Using REST API commands, add the KO the shelf. Open your REST API client and run the following ADD/UPDATE command.
+
+
 ```
-      PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
-      ```
+PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
+      
+```
+
+
 
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.  
    ```GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf```
