@@ -48,7 +48,6 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
 
    ```
 
-
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.  
 
    ```
