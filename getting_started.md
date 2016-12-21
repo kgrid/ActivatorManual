@@ -43,11 +43,10 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
 
 2. Using REST API commands, add the KO the shelf. Open your REST API client, and run the following ADD/UPDATE command. 
 
-
    ```
    PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/fk4rf60z9w
-   ```
    
+   ```
 
 
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.  
