@@ -124,15 +124,10 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
 
 3. Copy & Paste or Upload the payload into the body. To add the payload, click "body", "raw", and then use the drop down box to change "text" to select "JSON \(application/json\)". Paste the JSON formatted payload into the body, and execute the PUT command.
    
-   
-   
    ```
       PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/0123456789
 
-   ```
-   
-      
-   
+   ``` 
    
 4. Check if the KO is on the shelf by looking for the ark ID.
 
