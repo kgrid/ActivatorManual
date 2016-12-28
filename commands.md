@@ -1,29 +1,30 @@
 #Commands
 
 There are multiple REST API commands that can be utilized when working with the execution stack. Most arkID will be formatted like **ark:/01234/0123456789**.
-
-1. See what KO are on shelf.
+ 
+  
+_See what KO are on shelf._
     ```
 GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf
 
     ```
-2. See details (url, payload, input and output message) for a specific KO on shelf.
+_See details (url, payload, input and output message) for a specific KO on shelf._
     ```
 GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/arkID
     ```
     
-3. Add/update KO to the shelf by Ark ID. 
-    ```
+_Add/update KO to the shelf by Ark ID. _   
+ ```
 PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/arkID
     ```
 
-4. Execute KO.
-    ```
+_Execute KO._    
+```
 POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/arkID/result
     ```
 
-5. Remove KO from shelf.
-    ```
+_Remove KO from shelf._    
+```
 DELETE http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/arkID
     ```
 
