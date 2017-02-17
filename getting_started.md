@@ -132,5 +132,6 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
 
 The output should be 5.
 
-### Helpful ToolsWe have created some helpful tools to help streamline this process, including a knowledge object generator and an input/output RDF generator. Check out the Additional Resources section to find these tools and other resources you can utilize when working with the execution stack: https://kgrid.gitbooks.io/execution-manual/content/additional_resources.html
+### Helpful Tools
+We have created some helpful tools to help streamline this process, including a knowledge object generator and an input/output RDF generator. Check out the Additional Resources section to find these tools and other resources you can utilize when working with the execution stack: https://kgrid.gitbooks.io/execution-manual/content/additional_resources.html
 
