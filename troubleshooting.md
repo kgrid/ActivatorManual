@@ -16,7 +16,7 @@ If you run the POST command, and receive this response, there is an error in the
 
 **Missing Body**
 
-If you run the POST command, and receive the follow response, the input body is missing. 
+If you run the POST command, and receive the follow response, the input body is missing.
 
 ```
 {
