@@ -18,7 +18,7 @@ GET {{baseUrl}}/shelf/arkID
 
 
 
-_Add/update KO to the shelf by Ark ID. _
+_Add/update KO to the shelf by Ark ID._
 
 ```
 PUT {{baseUrl}}/shelf/arkID
