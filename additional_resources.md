@@ -1,6 +1,6 @@
 # Additional Resources
 
-To help streamline the authoring and execution process we have created some helpful tools.
+To help streamline the authoring and execution process we have created some helpful tools. All tools can be found at: https://github.com/kgrid/tools
 
 **Knowledge Object Generator \(**[https://github.com/kgrid/tools/tree/master/knowledge-object-generator](https://github.com/kgrid/tools/tree/master/knowledge-object-generator)**\)**  
 This generator takes in your payload file, input RDF file, output RDF file, and a template and outputs the JSON-formatted knowledge object. From there, you an directly upload the JSON file to the execution stack, or create a knowledge object on ObjectTeller.
