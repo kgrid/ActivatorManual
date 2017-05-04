@@ -1,4 +1,4 @@
-# Execution Checklist
+# Activator Checklist
 
 1. Find KO ArkID OR Download KO payload from KGrid Library.
 2. Using REST API commands, ADD/UPDATE knowledge object to the shelf.
