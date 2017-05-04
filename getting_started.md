@@ -1,21 +1,21 @@
 # Getting Started
 
-There are two ways to utilize the execution stack: \(1\) Load to the Execution Stack \(pull from the library\), and \(2\) Download and Direct Upload. Direct upload may be useful when testing during development by eliminating the library steps. First, we will show how to load to the execution stack by pulling from the ObjectTeller library.
+There are two ways to utilize an activator: \(1\) Load to the Activator \(pull from the library\), and \(2\) Download and Direct Upload. Direct upload may be useful when testing during development by eliminating the library steps. First, we will show how to load to the activator by pulling from the KGrid library. (Note: The KGrid sandbox activator works with python knowledge objects and is available at the following baseUrl: http://kgrid.med.umich.edu/stack)
 
 ### Load to Execution Stack: Basic Steps
 
-1. Find the knowledge objects \(KO\) ArkID. The ArkID can be found on ObjectTeller.
+1. Find the knowledge objects \(KO\) ArkID. The ArkID can be found at the KGrid Library.
 
 2. Using REST API commands, add KO to shelf. Execute the PUT command.
 
    ```
-   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/ArkID
+   PUT {{baseUrl}}/shelf/ark:/ArkID
    ```
 
 3. Check the shelf to make sure the KO ArkID was properly added. If your ArkID of interest is not on the shelf, double check you have the correct ArkID and re-do step 2.
 
    ```
-   GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/
+   GET {{baseUrl}}/shelf/
    ```
 
 4. Add body \(input parameters\) and tests \(optional\). The following header must be used when execute KO. Copy & Paste the header into your REST API client and execute the POST command.
@@ -26,24 +26,24 @@ There are two ways to utilize the execution stack: \(1\) Load to the Execution S
    ```
 
    ```
-   POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/ArkID/result
+   POST {{baseUrl}}/knowledgeObject/ark:/ArkID/result
    ```
 
 ### Example 1:
 
 Now, let's try using an actual knowledge object: Total Prescriptions.
 
-1. Find KO Ark ID from the Object Teller Library. The ArkID is **ark:/99999/fk4rf60z9w**
+1. Find KO Ark ID from the KGrid Library. The ArkID is **ark:/99999/fk4rf60z9w**
 
 2. Using REST API commands, add the KO the shelf. Open your REST API client, and run the following ADD/UPDATE command.
    ```
-   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/fk4rf60z9w
+   PUT {{baseUrl}}/shelf/ark:/99999/fk4rf60z9w
    ```
 
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.
 
    ```
-   GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf
+   GET {{baseUrl}}/shelf
    ```
 
 4. Now let's execute the KO. Let's add a basic body that was included in the test function within the Total Prescriptions script. Copy & Paste the header and execute the command.  
@@ -55,14 +55,14 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
    ```
 
    ```
-   POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/fk4rf60z9w/result
+   POST {{baseUrl}}/ark:/99999/fk4rf60z9w/result
    ```
 
 The output should be 5.
 
 ### Direct Upload to Execution Stack: Basic Steps
 
-1. If you are downloading a payload from a KO, go to the ObjectTeller Library and find the KO of interest. Click download.
+1. If you are downloading a payload from a KO, go to the KGrid Library and find the KO of interest. Click download.
 2. Go to your REST API client and use the PUT command to add the payload to the shelf. In order to add a payload to the shelf, an Ark ID must be defined. We suggest choosing a test Ark ID or one not in use to prevent confusion. 
 3. Copy & Paste the payload into the body, add the required header, and execute the PUT command
 4. Check in the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct ArkID and re-do step 2.
@@ -104,18 +104,18 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
          }
    ```
 
-2. Go to your REST API client and use the PUT command to add the payload to the shelf. Let's assign this KO the following ark ID:** ark:/99999/0123456789**.
+2. Go to your REST API client and use the PUT command to add the payload to the shelf. Let's assign this KO the following ark ID:**ark:/99999/123**.
 
 3. Copy & Paste or Upload the payload into the body. To add the payload, click "body", "raw", and then use the drop down box to change "text" to select "JSON \(application/json\)". Paste the JSON formatted payload into the body, and execute the PUT command.
 
    ```
-   PUT http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/ark:/99999/0123456789
+   PUT {{baseUrl}}/shelf/ark:/99999/123
    ```
 
 4. Check if the KO is on the shelf by looking for the ark ID.
 
    ```
-   GET http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/shelf/
+   GET {{baseUrl}}/shelf/
    ```
 
 5. Using the POST command, add body \(input parameters\) and tests\(optional\). Copy & Paste the header and execute the KO.  
@@ -127,11 +127,11 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
    ```
 
    ```
-   POST http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/knowledgeObject/ark:/99999/0123456789/result
+   POST {{baseUrl}}/knowledgeObject/ark:/99999/123/result
    ```
 
 The output should be 5.
 
 ### Helpful Tools
-We have created some helpful tools to help streamline this process, including a knowledge object generator and an input/output RDF generator. Check out the Additional Resources section to find these tools and other resources you can utilize when working with the execution stack: https://kgrid.gitbooks.io/execution-manual/content/additional_resources.html
+We have created some helpful tools to help streamline this process, including a knowledge object generator and an input/output RDF generator. Check out the Additional Resources section to find these tools and other resources you can utilize when working with an Activator: http://kgrid.org/ActivatorManual/additional_resources
 
