@@ -1,6 +1,6 @@
 # Activator Manual
 
-A knowledge object has not reached its full potential until it is able to be executed, particularly against applicable data, such as data collected from electronic health records \(EHR\). If you have questions about how KO are created or managed, reference the [Authoring & Managing Knowledge Objects Manual](kgrid.org/AuthoringManual).
+A knowledge object has not reached its full potential until it is able to be executed, particularly against applicable data, such as data collected from electronic health records \(EHR\). If you have questions about how KO are created or managed, reference the [Authoring & Managing Knowledge Objects Manual](http://kgrid.org/AuthoringManual).
 
 An activator allows knowledge objects to be executable against collected data. The basic steps to execute a knowledge object include \(1\) Add Knowledge Object to Shelf, and \(2\) Execute Knowledge Object Against Data. There are two ways to utilize the activator: \(1\) Load to the Activator \(pull from library\), and \(2\) Download Payload and Direct Upload.
 
