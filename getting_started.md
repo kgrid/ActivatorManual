@@ -9,13 +9,13 @@ There are two ways to utilize an activator: \(1\) Load to the Activator \(pull f
 2. Using REST API commands, add KO to shelf. Execute the PUT command.
 
    ```
-   PUT {{baseUrl}}/shelf/ark:/ArkID
+   PUT baseUrl/shelf/ark:/ArkID
    ```
 
 3. Check the shelf to make sure the KO ArkID was properly added. If your ArkID of interest is not on the shelf, double check you have the correct ArkID and re-do step 2.
 
    ```
-   GET {{baseUrl}}/shelf/
+   GET baseUrl/shelf/
    ```
 
 4. Add body \(input parameters\) and tests \(optional\). The following header must be used when execute KO. Copy & Paste the header into your REST API client and execute the POST command.
@@ -26,7 +26,7 @@ There are two ways to utilize an activator: \(1\) Load to the Activator \(pull f
    ```
 
    ```
-   POST {{baseUrl}}/knowledgeObject/ark:/ArkID/result
+   POST baseUrl/knowledgeObject/ark:/ArkID/result
    ```
 
 ### Example 1:
@@ -37,13 +37,13 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
 
 2. Using REST API commands, add the KO the shelf. Open your REST API client, and run the following ADD/UPDATE command.
    ```
-   PUT {{baseUrl}}/shelf/ark:/99999/fk4rf60z9w
+   PUT baseUrl/shelf/ark:/99999/fk4rf60z9w
    ```
 
 3. Check if the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct Ark ID and re-do step 2.
 
    ```
-   GET {{baseUrl}}/shelf
+   GET baseUrl/shelf
    ```
 
 4. Now let's execute the KO. Let's add a basic body that was included in the test function within the Total Prescriptions script. Copy & Paste the header and execute the command.  
@@ -55,7 +55,7 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
    ```
 
    ```
-   POST {{baseUrl}}/ark:/99999/fk4rf60z9w/result
+   POST baseUrl/ark:/99999/fk4rf60z9w/result
    ```
 
 The output should be 5.
@@ -109,13 +109,13 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
 3. Copy & Paste or Upload the payload into the body. To add the payload, click "body", "raw", and then use the drop down box to change "text" to select "JSON \(application/json\)". Paste the JSON formatted payload into the body, and execute the PUT command.
 
    ```
-   PUT {{baseUrl}}/shelf/ark:/99999/123
+   PUT baseUrl/shelf/ark:/99999/123
    ```
 
 4. Check if the KO is on the shelf by looking for the ark ID.
 
    ```
-   GET {{baseUrl}}/shelf/
+   GET baseUrl/shelf/
    ```
 
 5. Using the POST command, add body \(input parameters\) and tests\(optional\). Copy & Paste the header and execute the KO.  
@@ -127,7 +127,7 @@ Let's use the same KO we used in Example 1: Total Prescriptions.
    ```
 
    ```
-   POST {{baseUrl}}/knowledgeObject/ark:/99999/123/result
+   POST baseUrl/knowledgeObject/ark:/99999/123/result
    ```
 
 The output should be 5.
