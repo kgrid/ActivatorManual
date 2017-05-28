@@ -1,3 +1,8 @@
+---
+layout: page
+title: Commands
+permalink: /commands/
+---
 # Commands
 
 There are multiple REST API commands that can be utilized when working with an Activator. Most arkID will be formatted as **ark:/.../...**.

@@ -1,3 +1,9 @@
+---
+layout: page
+title: Test Functions
+level: 1
+permalink: /test_functions/
+---
 # Test Functions
 
 When executing knowledge objects \(KO\) on an activator, it is helpful to include test functions in order to ensure the KO are working properly. Here we have included some test functions that may be helpful at each step in the process. Multiple test functions can be utilized when working with multiple KO. A collection of REST API commands can be created, that can serve as a "smoke test" to make sure everything is working properly.

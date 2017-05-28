@@ -1,3 +1,9 @@
+---
+layout: page
+title: Activator Checklist
+level: 1
+permalink: /activator_checklist/
+---
 # Activator Checklist
 
 1. Find KO ArkID OR Download KO payload from KGrid Library.

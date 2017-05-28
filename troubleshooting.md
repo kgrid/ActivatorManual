@@ -1,3 +1,9 @@
+---
+layout: page
+title: Troubleshooting
+level: 1
+permalink: /troubleshooting/
+---
 # Troubleshooting
 
 Here are some common errors that we identified during the execution process. 

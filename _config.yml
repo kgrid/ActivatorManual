@@ -1,2 +1,28 @@
-title: Knwledge Grid Activator Manual
+title: KGrid Activator Manual
+author: KGrid Development Team
+email: dlhs.knowledge.grid@umich.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Knowledge Grid is powered by Fedora 4 and supported by University of Michigan Medical School
+
+#twitter_username: jekyllrb
+#github_username:  kgrid-um-team
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - getting-started.md
+  - activator_checklist.md
+  - test_functions.md
+  - commands.md
+  - how_execution_stack_works.md
+  - troubleshooting.md
+  - additional-resources.md
+
+
+#theme: jekyll-theme-cayman
 theme: minima

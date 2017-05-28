@@ -1,3 +1,9 @@
+---
+layout: page
+title: Get Started
+level: 1
+permalink: /getting-started/
+---
 # Getting Started
 
 There are two ways to utilize an activator: \(1\) Load to the Activator \(pull from the library\), and \(2\) Download and Direct Upload. Direct upload may be useful when testing during development by eliminating the library steps. First, we will show how to load to the activator by pulling from the KGrid library. (Note: The KGrid sandbox activator works with python knowledge objects and is available at the following baseUrl: http://kgrid.med.umich.edu/stack)

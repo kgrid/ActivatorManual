@@ -1,3 +1,8 @@
+---
+layout: page
+title: Additional Resources
+permalink: /additional_resources/
+---
 # Additional Resources
 
 To help streamline the authoring and execution process we have created some helpful tools. All tools can be found at: https://github.com/kgrid/tools
