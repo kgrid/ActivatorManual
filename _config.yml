@@ -15,13 +15,13 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-  - getting-started.md
+  - getting_started.md
   - activator_checklist.md
   - test_functions.md
   - commands.md
   - how_execution_stack_works.md
   - troubleshooting.md
-  - additional-resources.md
+  - additional_resources.md
 
 
 #theme: jekyll-theme-cayman
