@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Commands
+level: 1
 permalink: /commands/
 ---
 # Commands
@@ -44,6 +45,3 @@ _Remove KO from shelf._
 ```
 DELETE {{baseUrl}}/shelf/arkID
 ```
-
-
-

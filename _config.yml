@@ -2,7 +2,7 @@ title: KGrid Activator Manual
 author: KGrid Development Team
 email: dlhs.knowledge.grid@umich.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Knowledge Grid is powered by Fedora 4 and supported by University of Michigan Medical School
+  AS a key component of Knowledge Grid, an activator allows knowledge objects to be executable against collected data.
 
 #twitter_username: jekyllrb
 #github_username:  kgrid-um-team
@@ -14,15 +14,18 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-header_pages:
-  - getting_started.md
-  - activator_checklist.md
-  - test_functions.md
-  - commands.md
-  - how_execution_stack_works.md
-  - troubleshooting.md
-  - additional_resources.md
+# header_pages:
+#   - getting_started.md
+#   - activator_checklist.md
+#   - test_functions.md
+#   - commands.md
+#   - how_execution_stack_works.md
+#   - troubleshooting.md
+#   - additional_resources.md
 
-
-#theme: jekyll-theme-cayman
+# Build settings
+markdown: kramdown
 theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
