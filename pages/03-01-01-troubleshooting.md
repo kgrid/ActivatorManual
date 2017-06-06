@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Troubleshooting
-level: 1
+level: 0
 permalink: /troubleshooting/
 ---
 # Troubleshooting
