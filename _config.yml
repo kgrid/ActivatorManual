@@ -2,7 +2,7 @@ title: KGrid Activator Manual
 author: KGrid Development Team
 email: dlhs.knowledge.grid@umich.edu
 description: > # this means to ignore newlines until "baseurl:"
-  AS a key component of Knowledge Grid, an activator allows knowledge objects to be executable against collected data.
+  As a key component of Knowledge Grid, an activator allows knowledge objects to be executable against collected data.
 
 #twitter_username: jekyllrb
 #github_username:  kgrid-um-team
