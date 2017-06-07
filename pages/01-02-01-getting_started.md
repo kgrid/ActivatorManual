@@ -8,7 +8,7 @@ permalink: /getting_started/
 
 There are two ways to utilize an activator: \(1\) Load to the Activator \(pull from the library\), and \(2\) Download and Direct Upload. Direct upload may be useful when testing during development by eliminating the library steps. First, we will show how to load to the activator by pulling from the KGrid library. (Note: The KGrid sandbox activator works with python knowledge objects and is available at the following baseUrl: http://kgrid.med.umich.edu/stack)
 
-### Load to Execution Stack: Basic Steps
+### Load to Activator: Basic Steps
 
 1. Find the knowledge objects \(KO\) ArkID. The ArkID can be found at the KGrid Library.
 
@@ -66,7 +66,7 @@ Now, let's try using an actual knowledge object: Total Prescriptions.
 
 The output should be 5.
 
-### Direct Upload to Execution Stack: Basic Steps
+### Direct Upload to Activator: Basic Steps
 
 1. If you are downloading a payload from a KO, go to the KGrid Library and find the KO of interest. Click download.
 2. Go to your REST API client and use the PUT command to add the payload to the shelf. In order to add a payload to the shelf, an Ark ID must be defined. We suggest choosing a test Ark ID or one not in use to prevent confusion.
