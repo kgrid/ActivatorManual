@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Test Functions
+navtitle: Test Functions
 level: 1
 permalink: /test_functions/
 ---
@@ -41,6 +41,3 @@ tests["Body matches string"] = responseBody.has("string_you_want_to_search");
 ```
 tests["Successful POST request"] = responseCode.code === 201 || responseCode.code === 202;
 ```
-
-
-

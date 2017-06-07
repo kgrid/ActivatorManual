@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Additional Resources
+navtitle: Additional Resources
 permalink: /additional_resources/
 ---
 # Additional Resources
@@ -17,8 +17,7 @@ The input/output RDF generator was created in C++ and python. This generator tak
 The KO Editor is a helpful tool created by the KGrid Taiwan team that provides an easy to use interfance for authors to utilize.
 
 **Execution Tools \(**[https://github.com/kgrid/tools/tree/master/ExecutionTools](https://github.com/kgrid/tools/tree/master/ExecutionTools)**\)**
-This respository provides examples of bash files and Postman Collections for working with an Activator. 
+This respository provides examples of bash files and Postman Collections for working with an Activator.
 
 **Postman \(**[https://www.getpostman.com](https://www.getpostman.com)**\)**  
 The KGrid team works with Postman as the preferred REST API client. We find Postman simple and rather straight forward to use when utilizing the execution stack. Postman also allows collections of calls that are useful in creating the "smoke tests".
-

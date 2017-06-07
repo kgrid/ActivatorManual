@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Activator Checklist
+navtitle: Activator Checklist
 level: 1
 permalink: /activator_checklist/
 ---
@@ -12,6 +12,3 @@ permalink: /activator_checklist/
 4. Add body \(input parameters\) and necessary headers.
 5. Add test functions \(optional\).
 6. Using REST API commands, execute knowledge object.
-
-
-

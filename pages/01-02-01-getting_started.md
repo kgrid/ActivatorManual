@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Get Started
+navtitle: Get Started
 level: 1
 permalink: /getting_started/
 ---
@@ -69,7 +69,7 @@ The output should be 5.
 ### Direct Upload to Execution Stack: Basic Steps
 
 1. If you are downloading a payload from a KO, go to the KGrid Library and find the KO of interest. Click download.
-2. Go to your REST API client and use the PUT command to add the payload to the shelf. In order to add a payload to the shelf, an Ark ID must be defined. We suggest choosing a test Ark ID or one not in use to prevent confusion. 
+2. Go to your REST API client and use the PUT command to add the payload to the shelf. In order to add a payload to the shelf, an Ark ID must be defined. We suggest choosing a test Ark ID or one not in use to prevent confusion.
 3. Copy & Paste the payload into the body, add the required header, and execute the PUT command
 4. Check in the KO is on the shelf. If the Ark ID is not on the shelf, double check you have the correct ArkID and re-do step 2.
 5. Add body \(input parameters\) and tests \(optional\). Execute the KO.
@@ -140,4 +140,3 @@ The output should be 5.
 
 ### Helpful Tools
 We have created some helpful tools to help streamline this process, including a knowledge object generator and an input/output RDF generator. Check out the Additional Resources section to find these tools and other resources you can utilize when working with an Activator: http://kgrid.org/ActivatorManual/additional_resources
-

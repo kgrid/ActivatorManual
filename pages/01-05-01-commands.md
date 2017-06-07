@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Commands
+navtitle: Commands
 level: 1
 permalink: /commands/
 ---

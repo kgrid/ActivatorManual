@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Troubleshooting
+navtitle: Troubleshooting
 level: 0
 permalink: /troubleshooting/
 ---
 # Troubleshooting
 
-Here are some common errors that we identified during the execution process. 
+Here are some common errors that we identified during the execution process.
 
 **Activator Environment**
 
@@ -60,4 +60,3 @@ or this error if you are missing a parameter:
 ```
 
 The KGrid Team has also created a Postman Collection with Error Handling Messages to help trouble shoot that can be found at https://github.com/kgrid/tools/blob/master/TestObjects/error-handling.json.
-
